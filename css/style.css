@@ -1,0 +1,72 @@
+html {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 16px;
+}
+
+img {
+  vertical-align: middle;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: royalblue;
+}
+
+.global-width {
+  max-width: 620px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.header {
+  padding-top: 15px;
+  margin-bottom: 50px;
+}
+.header h1 {
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 1.5em;
+  margin-bottom: 15px;
+}
+.header p span {
+  display: block;
+}
+.header p span + span {
+  margin-top: 10px;
+}
+
+.scroll-content {
+  margin-bottom: 30px;
+}
+.scroll-content .scroll-graphic {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+}
+.scroll-content .scroll-graphic .graphic-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.scroll-content .scroll-graphic .graphic-item img {
+  max-height: 100vh;
+}
+.scroll-content .scroll-text {
+  position: relative;
+  padding-bottom: 1px;
+}
+.scroll-content .scroll-text .step {
+  margin-bottom: 60vh;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0 0 3px;
+}
+
+/*# sourceMappingURL=style.css.map */
