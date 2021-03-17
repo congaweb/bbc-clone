@@ -53,9 +53,14 @@ a {
   left: 0;
   width: 100%;
   height: 100%;
+  opacity: 0;
+  transition: 0.5s;
 }
 .scroll-content .scroll-graphic .graphic-item img {
   max-height: 100vh;
+}
+.scroll-content .scroll-graphic .graphic-item.visible {
+  opacity: 1;
 }
 .scroll-content .scroll-text {
   position: relative;
@@ -64,7 +69,7 @@ a {
 .scroll-content .scroll-text .step {
   margin-bottom: 60vh;
   padding: 20px;
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.8);
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.3) 0 0 3px;
 }
