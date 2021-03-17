@@ -19,6 +19,9 @@ a{
 .header{
     padding-top: 15px;
     margin-bottom: 50px;
+    @media screen and (max-width: 768px) {
+        margin-bottom: 6.5104vw;
+    }
     h1{
         font-size: 32px;
         font-weight: bold;
@@ -35,7 +38,7 @@ a{
     }
 }
 .scroll-content{
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     .scroll-graphic{
         position: sticky;
         top:0;
@@ -68,6 +71,39 @@ a{
             background: rgba(255,255,255,0.8);
             border-radius: 10px;
             box-shadow: rgba(0,0,0,0.3) 0 0 3px;
+            .strikethrough{
+                text-decoration: line-through;
+            }
         }
+    }
+}
+.normal-content{
+    h2{
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    p{
+        margin-bottom: 20px;
+    }
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+    p + p {
+        margin-left:10px;
+    }
+}
+.only-pc{
+    display: block;
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+}
+.only-mo{
+    display: none;
+    @media screen and (max-width: 768px){
+        display: block;
     }
 }

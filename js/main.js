@@ -4,8 +4,8 @@
     let currentItem = graphicElems[0];
     let ioIndex;
 
-    const io = new IntersectionObserver((entries)=>{
-        ioIndex = entries[0].target.dataset.index;
+    const io = new IntersectionObserver((entries, observer) => {
+        ioIndex = entries[0].target.dataset.index * 1;
     });
 
     for (let i = 0; i < stepElems.length; i++) {
@@ -26,8 +26,10 @@
         let step;
         let boundingRect;
 
-        for (let i = 0; i < stepElems.length; i++) {
+        // for (let i = 0; i < stepElems.length; i++) {
+        for (let i = ioIndex - 1; i < ioIndex + 2; i++) {
             step = stepElems[i];
+            if(!step) continue;
             boundingRect = step.getBoundingClientRect();
             console.log(ioIndex);
 
@@ -41,9 +43,7 @@
     });
 
     window.addEventListener('load', () => {
-        setTimeout(() => {
-            scrollTo(0, 0);
-        }, 100);
+        setTimeout(() => scrollTo(0, 0), 100);
 
     });
 
